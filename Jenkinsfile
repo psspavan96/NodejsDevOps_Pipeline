@@ -1,10 +1,5 @@
 pipeline {
-   environment {
-     dockerRegistry = "pavan96/nodeapp"
-     dockerRegistryCredential = 'dockerhub'
-     dockerImage = ''
-   }
-   agent any
+  agent any
     
   tools {nodejs "Node"}
     
@@ -26,22 +21,11 @@ pipeline {
         sh 'npm install'
       }
     }
+    stage('Start App') {
+      steps {
+        sh 'npm start'
+      }
+    } 
  
-    stage('Building image') {
-       steps{
-         script {
-           dockerImage = docker.build dockerRegistry + ":$BUILD_NUMBER"
-         }
-       }
-     }
-     stage('Upload Image') {
-       steps{
-         script {
-           docker.withRegistry( '', dockerRegistryCredential ) {
-             dockerImage.push()
-           }
-         }
-       }
-     }
   }
 }
