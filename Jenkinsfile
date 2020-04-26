@@ -1,5 +1,10 @@
 pipeline {
-  agent any
+   environment {
+     dockerRegistry = "pavan96/nodeapp"
+     dockerRegistryCredential = 'dockerhub'
+     dockerImage = ''
+   }
+   agent any
     
   tools {nodejs "Node"}
     
