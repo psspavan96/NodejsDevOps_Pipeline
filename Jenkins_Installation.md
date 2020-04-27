@@ -1,6 +1,6 @@
 # Steps to Install Jenkins on EC2(Ubuntu) Instance #
 </br>
-## Installing Java ##
+## Installing Java
 </br>
 1) Open a terminal window on your Ubuntu server.
 </br>
