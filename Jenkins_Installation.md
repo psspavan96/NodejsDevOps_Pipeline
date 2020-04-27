@@ -35,5 +35,21 @@ Open a web browser and point it to "http://SERVER_IP:8080" (where SERVER_IP is t
 </br>
 To retrieve that password, go back to the terminal window and issue the command "cat /var/lib/jenkins/secrets/initialAdminPassword"
 
+#### Next Steps ####
+</br>
+1) Once you've unlocked Jenkins, you can then finish the installation by either installing the suggested plugins or installing only the plugins you want. 
+</br>
+2) When the plugin installation completes, you will then be prompted to create an admin user.
+</br>
+3) Fill out the necessary information for the admin user and click Save And Continue. You will then be shown the Jenkins URL. Click Finish and you're ready to start using Jenkins.
+
+#### Change admin password ####
+</br>
+Go to Admin > Configure > Password
+#### Configure java path ####
+</br>
+Go to Manage Jenkins > Global Tool Configuration > JDK
+
+
 
 
