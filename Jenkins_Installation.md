@@ -46,6 +46,7 @@ To retrieve that password, go back to the terminal window and issue the command 
 #### Change admin password ####
 </br>
 Go to Admin > Configure > Password
+
 #### Configure java path ####
 </br>
 Go to Manage Jenkins > Global Tool Configuration > JDK
