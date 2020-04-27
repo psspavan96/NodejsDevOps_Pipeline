@@ -44,11 +44,9 @@ To retrieve that password, go back to the terminal window and issue the command 
 3) Fill out the necessary information for the admin user and click Save And Continue. You will then be shown the Jenkins URL. Click Finish and you're ready to start using Jenkins.
 
 #### Change admin password ####
-</br>
 Go to Admin > Configure > Password
 
 #### Configure java path ####
-</br>
 Go to Manage Jenkins > Global Tool Configuration > JDK
 
 
