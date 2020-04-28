@@ -15,3 +15,7 @@
 7) Install docker using the command "sudo apt install docker-ce"
 </br>
 8) To check whether docker is running or not use the command "sudo systemctl status docker"
+</br>
+9) Create a user called dockeradmin by using the commands "useradd dockeradmin" and "passwd dockeradmin".
+</br)
+10) Then add the user to the group by using the command "usermod -aG docker dockeradmin"
