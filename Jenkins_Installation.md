@@ -1,19 +1,21 @@
 # Steps to Install Jenkins on EC2(Ubuntu) Instance #
 ### Prerequisites ###
 </br>
-1) EC2 Instance With Internet Access and Security Group with Port 8080 open for internet
+1) AWS EC2 Instance With Internet Access and Security Group with Port 8080 open for internet
 </br>
-2) Java v1.8.x
+2) Java
 
 ## Installing Java ##
 </br>
 1) Open a terminal window on your Ubuntu server.
 </br>
-2) Issue the command "sudo apt install default-jdk-headless"
+2) Once you are connected to the server type "sudo su" command in the terminal to go to the root.
 </br>
-3) Allow the installation to complete
+3) Issue the command "sudo apt install default-jdk-headless"
 </br>
-4) To check the version of Java, issue the command "java --version"
+4) Allow the installation to complete
+</br>
+5) To check the version of Java, issue the command "java --version"
 
 ## Installing Jenkins ##
 </br>
