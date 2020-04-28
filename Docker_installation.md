@@ -1,5 +1,5 @@
 #### Steps to install Docker on your Jenkins Server ####
-
+</br>
 1) First, update your existing list of packages using the command "sudo apt update"
 </br>
 2) Next, install a few prerequisite packages which let apt use packages over HTTPS using the command "sudo apt install apt-transport-https ca-certificates curl software-properties-common"
