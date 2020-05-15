@@ -1,9 +1,9 @@
 ## Creating a Jenkins Job to create and push Docker Image to dockerHub ##
-</br>
+
 1) Log in to your Jenkins server and Click on New Item.
-</br>
+
 2) Enter the project name and Select Pipeline.
-</br>
+
 3) Paste the script given below in the pipeline section of the Jenkins Job:
 
 pipeline {
@@ -38,7 +38,7 @@ pipeline {
     }
   }
 }
-</br>
+
 4) Click Apply and Save
-</br>
+
 5) Once the configuration is done, Click on Build now to build the job.
