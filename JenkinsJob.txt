@@ -1,1 +1,44 @@
+## Creating a Jenkins Job to create and push Docker Image to dockerHub ##
+</br>
+1) Log in to your Jenkins server and Click on New Item.
+</br>
+2) Enter the project name and Select Pipeline.
+</br>
+3) Paste the script given below in the pipeline section of the Jenkins Job:
 
+pipeline {
+  environment {
+    registry = "your docker registry"
+    registryCredential = 'your registry credentials'
+    dockerImage = ''
+  }
+  agent any
+  tools {nodejs "Node" }
+  stages {
+    stage('Cloning Git') {
+      steps {
+        git 'your repository'
+      }
+    }
+    stage('Building image') {
+      steps{
+        script {
+          dockerImage = docker.build registry + ":$BUILD_NUMBER"
+        }
+      }
+    }
+    stage('Deploy Image') {
+      steps{
+         script {
+            docker.withRegistry( '', registryCredential ) {
+            dockerImage.push()
+          }
+        }
+      }
+    }
+  }
+}
+</br>
+4) Click Apply and Save
+</br>
+5) Once the configuration is done, Click on Build now to build the job.
