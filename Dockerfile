@@ -1,4 +1,4 @@
-FROM node:12
+FROM node:12 # Note: This version should match with the node version that is installed on the jenkins server
 
 # Create app directory
 WORKDIR /usr/src/app
