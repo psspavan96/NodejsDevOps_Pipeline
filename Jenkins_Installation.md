@@ -51,6 +51,18 @@ Go to Admin > Configure > Password
 #### Configure java path ####
 Go to Manage Jenkins > Global Tool Configuration > JDK
 
+#### Note ####
+</br>
+The following plugins are required to be installed on Jenkins Server before executing this code:
+</br>
+1) Docker 
+2) Docker Pipeline
+3) Git and GitHub 
+4) Node.js 
+In order to install these plugins Go to Jenkins Home > Manage Jenkins > Manage Plugins
+
+Once the above plugins are installed, go to Manage Jenkins > Global Tool Configuration to configure the plugins
+
 
 
 
