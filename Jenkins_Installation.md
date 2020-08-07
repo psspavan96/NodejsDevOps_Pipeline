@@ -56,11 +56,15 @@ Go to Manage Jenkins > Global Tool Configuration > JDK
 The following plugins are required to be installed on Jenkins Server before executing this code:
 </br>
 1) Docker 
+</br>
 2) Docker Pipeline
+</br>
 3) Git and GitHub 
+</br>
 4) Node.js 
+</br>
 In order to install these plugins Go to Jenkins Home > Manage Jenkins > Manage Plugins
-
+</br>
 Once the above plugins are installed, go to Manage Jenkins > Global Tool Configuration to configure the plugins
 
 
