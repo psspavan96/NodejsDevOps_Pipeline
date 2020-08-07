@@ -1,6 +1,7 @@
 ## Creating a Jenkins Job to create and push Docker Image to dockerHub ##
 
-Note: Before proceeding with the steps below, go to Manage Jenkins > credentials > Jenkins. Click on Jenkins and add your github and dockerhub credentials. Also login to your jenkins server from your command prompt/terminal and execute this command "chmod 777 /var/run/docker.sock".
+Note: Before proceeding with the steps below, go to Manage Jenkins > credentials > Jenkins. Click on Jenkins and add your github and dockerhub credentials. 
+Also login to your jenkins server from your command prompt/terminal and execute this command "chmod 777 /var/run/docker.sock".
 
 1) Log in to your Jenkins server and Click on New Item.
 
