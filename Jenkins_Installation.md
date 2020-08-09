@@ -30,10 +30,14 @@
 5) Install Jenkins with the command "sudo apt-get install jenkins -y".
 </br>
 6) Allow the installation to complete.
+</br>
+7) To start jenkins use the command: sudo systemctl start jenkins
+</br>
+8) To view the status use the command: sudo systemctl status jenkins
 
 ## How to access Jenkins ##
 </br>
-Open a web browser and point it to "http://SERVER_IP:8080" (where SERVER_IP(Public IPv4 in Google VM Instance) is the IP address of the hosting server). You will then be prompted to copy and paste a password that was created during the Jenkins installation. 
+Open a web browser and point it to "http://SERVER_IP:8080" (where SERVER_IP(External IP in Google VM Instance) is the IP address of the hosting server). You will then be prompted to copy and paste a password that was created during the Jenkins installation. 
 </br>
 To retrieve that password, go back to the terminal window and issue the command "cat /var/lib/jenkins/secrets/initialAdminPassword"
 
