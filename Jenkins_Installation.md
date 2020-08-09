@@ -1,7 +1,7 @@
 # Steps to Install Jenkins on EC2(Ubuntu) Instance #
 ### Prerequisites ###
 </br>
-1) AWS EC2 Instance With Internet Access and Security Group with Port 8080 open for internet
+1) Google VM Instance With Internet Access and Security Group with Port 8080 open for internet
 </br>
 2) Java
 
@@ -15,7 +15,7 @@
 </br>
 4) Allow the installation to complete
 </br>
-5) To check the version of Java, issue the command "java --version"
+5) To check the version of Java, issue the command "java -version"
 
 ## Installing Jenkins ##
 </br>
