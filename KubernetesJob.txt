@@ -3,7 +3,7 @@
 2) Go to the Navigation Menu --> Compute --> Kubernetes Engine --> Clusters --> Create a cluster
 
 3) Once the cluster is created, login to the cluster and create a deployment using the following command:
-    kubectl create deployment mydeploy --image=yourdockerusername:tag
+    kubectl create deployment mydeploy --image=yourdockerregistry:tag
 4) Once the deployment is created, expose your application through a service through the following command:
     kubectl expose deployment mydeploy --name=my-service --type=LoadBalancer
 5) Once the service is created, view the application on the browser using the service IP and port 8080.    
