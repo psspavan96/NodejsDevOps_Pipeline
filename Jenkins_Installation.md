@@ -1,4 +1,4 @@
-# Steps to Install Jenkins on EC2(Ubuntu) Instance #
+# Steps to Install Jenkins on Google VM(Ubuntu) Instance #
 ### Prerequisites ###
 </br>
 1) Google VM Instance With Internet Access and Security Group with Port 8080 open for internet
