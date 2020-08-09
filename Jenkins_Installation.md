@@ -35,6 +35,22 @@
 </br>
 8) To view the status use the command: sudo systemctl status jenkins
 
+## Creating Firewall Rules ##
+</br>
+Go to Firewall under VPC network in Networking section of navigation and create a firewall with the following values:
+</br>
+1) Enter the name of the firewall as you want
+</br>
+2) Ensure the network, priority, direction of traffic, action on match, targets is the default, 1000, ingress, allow and specified target tags respectively.
+</br>
+3) For Target tags — enter http-server,https-server
+</br>
+4) For Source filter — IP ranges and 0.0.0.0/0 in Source IP ranges(Traffic is only allowed from sources within these IP address ranges)
+</br>
+5) For Protocols and ports — Specified protocols and ports must be selected and then check tcp and enter 8080
+</br>
+Now hit Create. It will take a couple of minutes to create a Firewall rule.
+
 ## How to access Jenkins ##
 </br>
 Open a web browser and point it to "http://SERVER_IP:8080" (where SERVER_IP(External IP in Google VM Instance) is the IP address of the hosting server). You will then be prompted to copy and paste a password that was created during the Jenkins installation. 
