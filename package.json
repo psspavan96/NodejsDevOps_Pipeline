@@ -4,7 +4,8 @@
   "description": "weather-app",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "author": "pavan",
   "license": "ISC",
@@ -12,5 +13,13 @@
     "body-parser": "^1.19.0",
     "ejs": "^3.0.2",
     "express": "^4.17.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/psspavan96/NodejsDevOps_Pipeline.git"
+  },
+  "bugs": {
+    "url": "https://github.com/psspavan96/NodejsDevOps_Pipeline/issues"
+  },
+  "homepage": "https://github.com/psspavan96/NodejsDevOps_Pipeline#readme"
 }
