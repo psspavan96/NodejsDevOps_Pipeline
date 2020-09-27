@@ -16,7 +16,7 @@ spec:
     spec: 
      containers:
       - name: weatherapp
-        image: <your-username>/mynodeapp:4
+        image: pavan96/mynodeapp
         ports:
         - containerPort: 3000
 ---
