@@ -1,36 +1,38 @@
 apiVersion: apps/v1
 kind: Deployment
-metadata:  
-  name: nodejs-weather  
-  labels:    
-    app: weatherapp
-spec:  
-  replicas: 1  
-  selector:    
-    matchLabels:
-      app: weatherapp
-  template:
-    metadata:
-      labels:
-        app: weatherapp
-    spec: 
-     containers:
-      - name: weatherapp
-        image: pavan96/mynodeapp:latest
-        ports:
-        - containerPort: 3000
+metadata:
+name: weather
+labels:
+  app: weather
+spec:
+strategy:
+  type: Recreate
+template:
+  metadata:
+    labels:
+      app: weather
+      tier: weather
+  spec:
+    containers:
+    - name: weather
+      image: pavan96/nodeapp:latest
+      imagePullPolicy: Always
+      ports:
+      - containerPort: 3000
+        name: hello
+
 ---
 apiVersion: v1
 kind: Service
 metadata:
-  name: weather-service
-  labels:
-    app: weatherapp
+name: weather-service
+labels:
+  app: weather
 spec:
-  type: LoadBalancer
-  ports:
+ports:
   - port: 3000
-    protocol: TCP
     targetPort: 3000
-  selector:
-    app: weatherapp
+selector:
+  app: weather
+  tier: weather
+type: LoadBalancer
