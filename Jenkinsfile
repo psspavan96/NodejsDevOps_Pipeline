@@ -1,5 +1,4 @@
 pipeline {
-  agent any
   environment {
     PROJECT_ID = 'jenkins1-290810' 
     CLUSTER_NAME = 'cluster-1' 
