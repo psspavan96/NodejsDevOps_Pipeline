@@ -12,7 +12,7 @@ Also login to your jenkins server from your command prompt/terminal and execute 
 pipeline {
   environment {
     registry = "your docker registry"
-    registryCredential = 'dockerhub'
+    registryCredential = 'your registry credentials'
     dockerImage = ''
   }
   agent any
